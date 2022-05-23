@@ -1,0 +1,34 @@
+{
+  "name": "rollup-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "rollup -c -w",
+    "prestart": "rimraf dist",
+    "build": "rimraf dist && rollup -c ./rollup.config.js --environment NODE_ENV:production",
+    "fix": "yarn install --force",
+    "mutate-modules": "node ./demo/mutate-modules.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "7.17.10",
+    "@babel/plugin-transform-runtime": "7.17.10",
+    "@babel/preset-env": "7.17.10",
+    "@babel/preset-react": "7.16.7",
+    "@rollup/plugin-babel": "5.3.1",
+    "@rollup/plugin-commonjs": "22.0.0",
+    "@rollup/plugin-node-resolve": "13.3.0",
+    "@rollup/plugin-replace": "4.0.0",
+    "postcss": "8.4.13",
+    "rimraf": "3.0.2",
+    "rollup": "2.72.1",
+    "rollup-plugin-css-only": "3.1.0",
+    "rollup-plugin-emit-ejs": "3.1.0",
+    "rollup-plugin-livereload": "2.0.5",
+    "rollup-plugin-postcss": "4.0.2",
+    "rollup-plugin-serve": "1.1.0"
+  },
+  "dependencies": {}
+}
