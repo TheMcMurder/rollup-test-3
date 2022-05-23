@@ -1,14 +1,10 @@
-# Rollup CSS test
+# Rollup rebuild test
 
-## How to get conditional css
+## Rebuilding a commonjs module
 
-I'm trying to figure out how to get my CSS to be conditionally included.
+I'm debugging an issue I'm experiencing with an internal commonjs dependency. For some reason rollup is struggling to produce the module as I expect and I want to simplify the build and the source code so I can test various scenarios
 
 ## running locally
 - yarn
 - yarn start
 - open http://localhost:8888/
-
-## FIXED
-
-The problem was the order of the plugins, I needed `replace` plugin first.
