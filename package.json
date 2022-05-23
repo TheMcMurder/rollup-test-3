@@ -30,5 +30,8 @@
     "rollup-plugin-postcss": "4.0.2",
     "rollup-plugin-serve": "1.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "react": "18.1.0",
+    "react-dom": "18.1.0"
+  }
 }
